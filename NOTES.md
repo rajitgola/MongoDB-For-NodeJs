@@ -17,5 +17,5 @@ db.collName.find({"actors.0" : "HeroName"});
 db.collName.find({"actors" : ["HeroName1" , "HeroName2"]});  //Now the order and count of these values matter in the query result
 
 Projections in MongoDB
-Reduce Network OverHead and Processing
+Reduce Network OverHead and Processing. Returns the required/specified field reducing document size.
 db.collName.find({"actors":"HeroName"} , {title : 1 , _id : 0}).pretty();  // _id always is always returned but it can explicitly changed to not show
